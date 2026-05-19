@@ -1,50 +1,25 @@
-# Welcome to your Expo app 👋
+# DevCard App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo de cartão de visitas digital para desenvolvedores mobile, desenvolvido como atividade prática.
 
-## Get started
+## Telas do Aplicativo
 
-1. Install dependencies
+### 1. Tela de Boas-vindas
+Tela inicial de apresentação do aplicativo com um botão para iniciar a criação do cartão.
 
-   ```bash
-   npm install
-   ```
+<img width="739" height="1600" alt="WhatsApp Image 2026-05-08 at 21 06 59" src="https://github.com/user-attachments/assets/8157d548-fd21-4871-94d4-03c5016feb77" />
 
-2. Start the app
 
-   ```bash
-   npx expo start
-   ```
+### 2. Tela de Cadastro
+Formulário para o usuário inserir seus dados profissionais (nome, cargo, empresa, anos de experiência, tecnologia e cor do cartão) com validação de campos obrigatórios.
 
-In the output, you'll find options to open the app in a
+<img width="739" height="1600" alt="WhatsApp Image 2026-05-08 at 21 06 59 (1)" src="https://github.com/user-attachments/assets/6be700d5-bff5-4172-9136-201767871235" />
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 3. Tela de Preview
+Renderização do cartão de visitas estilizado de acordo com os dados preenchidos e a cor escolhida. Inclui uma badge que calcula o nível de experiência do dev.
+<img width="739" height="1600" alt="WhatsApp Image 2026-05-08 at 21 07 00 (1)" src="https://github.com/user-attachments/assets/6429d00b-b755-461f-841e-0e3ad582ce90" />
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 4. Tela de Sucesso
+Tela final de confirmação informando que o cartão foi gerado com sucesso.
+<img width="739" height="1600" alt="WhatsApp Image 2026-05-08 at 21 07 00" src="https://github.com/user-attachments/assets/bdc0d7d5-a9d5-415d-9f84-de55be752570" />
