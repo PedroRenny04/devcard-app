@@ -13,41 +13,33 @@ type PreviewParams = {
 export default function Preview() {
 
   const router = useRouter();
+
   const params = useLocalSearchParams<PreviewParams>();
 
-  const inicial = params.nome
-    ? String(params.nome).charAt(0).toUpperCase()
-    : '?';
+  const inicial = params.nome ? params.nome.charAt(0).toUpperCase() : '?';
 
   let nivel = 'Júnior';
   let corBadge = '#808080';
 
   if (Number(params.anos) >= 3 && Number(params.anos) <= 5) {
-  nivel = 'Pleno';
-  corBadge = '#0000FF'; 
-} else if (Number(params.anos) >= 6) {
-  nivel = 'Sênior';
-  corBadge = '#FFD700'; 
-}
-  
+    nivel = 'Pleno';
+    corBadge = '#0000FF';
+  } else if (Number(params.anos) >= 6) {
+    nivel = 'Sênior';
+    corBadge = '#FFD700';
+  }
 
-  function corCartao() {
-
-    if (params.cor === 'Verde') {
-      return '#d4ffd4';
-    }
-
-    if (params.cor === 'Roxo') {
-      return '#eed4ff';
-    }
-
-    return '#d4e4ff';
+  let corFundo = '#d4e4ff';
+  if (params.cor === 'Verde') {
+    corFundo = '#d4ffd4';
+  } else if (params.cor === 'Roxo') {
+    corFundo = '#eed4ff';
   }
 
   return (
     <View style={styles.container}>
 
-      <View style={[styles.card, { backgroundColor: corCartao() }]}>
+      <View style={[styles.card, { backgroundColor: corFundo }]}>
 
         <View style={styles.avatar}>
           <Text style={styles.avatarText}>

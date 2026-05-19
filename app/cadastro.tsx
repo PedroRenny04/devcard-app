@@ -21,7 +21,7 @@ export default function Cadastro() {
       return;
     }
 
-    if (!cargo || !anos || !tecnologia) {
+    if (cargo === '' || anos === '' || tecnologia === '') {
       setErro('Preencha os campos obrigatórios');
       return;
     }
@@ -33,7 +33,6 @@ export default function Cadastro() {
 
     setErro('');
 
-    
     router.push({
       pathname: '/preview',
       params: {
